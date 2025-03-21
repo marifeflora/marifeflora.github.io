@@ -1,0 +1,72 @@
+"<!DOCTYPE html>
+><h1>Please login <h1>
+<html>
+
+<body>
+  
+    <form id="myForm">
+
+          <label for="fname">First name:</label><br>
+          <input type="text" id="username" name="fname"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="password" name="lname"><br><br>
+          <input type="submit" value="Submit">
+
+    </form>
+
+
+<table id="dataTable" border="1">
+   </thead>
+           <tr>
+
+            <th>First name</th>
+            <th>Last name</th>
+
+            <tr>
+
+                <th>Angela</th>
+                <th>Noora</th>
+
+           <tr>
+                <th>Leo</th>
+                <th>Misolas</th> 
+                
+            <tr>
+            
+              
+   <tbody>
+    
+  <table>
+    
+ <script>
+  
+      document.getElementById('myForm').addEventListener('submit',function(enent){event.preventDefault();// Prevent page reload
+  
+          // Get form values
+          let fname=<document.getElentById(fname).value.trim();
+          let lname=document.getElementById(lname).value.trim();
+  
+          // Get the table let tableBody=document.getElementById('dataTable').getElementsByTagName('tbody')[0];
+  
+          //Create a new row
+          let newRow=tableBody=insertrow();
+          
+          //Insert cells
+          let cell1=newRow.insertcell(0)
+          let cell2=newRow.insertcell(1)
+
+          //add values
+          cell1.textcontent=fname;
+          cell2.textcontent=lname;
+
+          //clear the form fields
+          document.getElementById("myForm").reset();
+
+
+      });
+
+      </script>
+
+<style>
+  body{background-color: aquamarine;}
+  h1{color: blue;text-align: ;center}
